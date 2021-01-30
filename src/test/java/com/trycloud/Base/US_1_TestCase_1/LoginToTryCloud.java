@@ -1,4 +1,4 @@
-package com.trycloud.Base;
+package com.trycloud.Base.US_1_TestCase_1;
 
 import com.trycloud.utilities.ConfigurationReader;
 import com.trycloud.utilities.WebDriverFactory;
@@ -17,6 +17,14 @@ public class LoginToTryCloud {
 
     @BeforeMethod
     public void loginToTryCloud() throws InterruptedException {
+
+        //Test case #1 - verify user login successfully
+        //1. Navigate to login page http://qa.trycloud.net/index.php/login?clear=1
+        //2. Enter valid username
+        //3. Enter valid password
+        //4. Click login button
+        //5. Verify the URL is chawed to homepage’s url
+        //(Put this test case in testBase class with an annotation so it runs for all the test case)
 
         driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
