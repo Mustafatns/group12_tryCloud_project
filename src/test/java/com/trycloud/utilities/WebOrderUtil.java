@@ -1,6 +1,6 @@
 package com.trycloud.utilities;
 
-import com.trycloud.tests.base.TestBase;
+import com.trycloud.Base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
