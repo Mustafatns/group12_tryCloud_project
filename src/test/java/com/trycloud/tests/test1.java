@@ -1,6 +1,6 @@
 package com.trycloud.tests;
 
-import com.trycloud.tests.base.TestBase;
+import com.trycloud.Base.TestBase;
 import com.trycloud.utilities.WebOrderUtil;
 import org.testng.annotations.Test;
 

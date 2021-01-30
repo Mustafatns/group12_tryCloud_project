@@ -1,4 +1,4 @@
-package com.trycloud.tests.base;
+package com.trycloud.Base;
 
 import com.trycloud.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
