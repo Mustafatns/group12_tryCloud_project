@@ -8,16 +8,9 @@ public class test1 extends TestBase {
 
 
 
-    @Test
-    public void test1(){
-
-        WebOrderUtil.loginToTryCloud(driver);
-
-        //testing testing testing testing again
 
     }
 
 
 
 
-}

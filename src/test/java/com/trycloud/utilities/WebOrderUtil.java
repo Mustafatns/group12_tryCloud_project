@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 
 public class WebOrderUtil extends TestBase {
 
-    public static void loginToTryCloud(WebDriver driver){
+    public static void loginToTryCloud(WebDriver driver) throws InterruptedException {
+
 
         driver.get("http://qa.trycloud.net/index.php/login?clear=1");
+        Thread.sleep(5000);
 
         // Entering username = "User12"
         WebElement inputUsername = driver.findElement(By.xpath("//input[@name='user']"));
@@ -22,7 +24,7 @@ public class WebOrderUtil extends TestBase {
         //Clicking the login button
         WebElement loginButton = driver.findElement(By.xpath("//input[@id='submit-form']"));
         loginButton.click();
-
+        Thread.sleep(5000);
 
 
     }
