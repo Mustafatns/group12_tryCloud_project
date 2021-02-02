@@ -1,21 +1,22 @@
 package com.trycloud.tests.Angelina;
 
-import com.trycloud.Base.TestBase;
+
+import com.trycloud.Base.US_1_TestCase_1.LoginToTryCloud;
 import com.trycloud.utilities.BrowserUtils;
-import com.trycloud.utilities.WebOrderUtil;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class UserStory3_Part1  extends TestBase {
+public class UserStory3_Part1  extends LoginToTryCloud {
 
 
     @Test
     public void verify_users_can_access_to_Files_module() {
 
         // 1.  Login as a user
-        WebOrderUtil.loginToTryCloud(driver);
+
 
         //  2. Verify the page tile is Files module’s tile
 
@@ -35,7 +36,7 @@ public class UserStory3_Part1  extends TestBase {
     @Test
     public void verify_users_can_select_all_the_uploaded_files_from_the_page(){
         // 1. Login as a user
-        WebOrderUtil.loginToTryCloud(driver);
+
 
         WebElement fileModule = driver.findElement(By.xpath("//li[@data-id='files']"));
         fileModule.click();
