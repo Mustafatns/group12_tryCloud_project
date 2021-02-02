@@ -5,6 +5,7 @@ import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.WebOrderUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class UserStory3_Part1  extends TestBase {
@@ -29,5 +30,28 @@ public class UserStory3_Part1  extends TestBase {
         // done with Test case#1
 
         // create on new branch
+
     }
+    @Test
+    public void verify_users_can_select_all_the_uploaded_files_from_the_page(){
+        // 1. Login as a user
+        WebOrderUtil.loginToTryCloud(driver);
+
+        WebElement fileModule = driver.findElement(By.xpath("//li[@data-id='files']"));
+        fileModule.click();
+        BrowserUtils.sleep(3);
+
+        // 2. Click the top left checkbox of the table
+        WebElement checkbox = driver.findElement(By.xpath("select_all_files"));
+        checkbox.click();
+        BrowserUtils.sleep(3);
+
+        // 3. Assert all the files are selected
+        Assert.assertTrue(driver.findElement(By.xpath("select_all_files")).isSelected());
+
+    }
+
+
+
+          //  (Pre-condition: there should be at least 2 files are uploaded the page)
 }
