@@ -36,7 +36,7 @@ public class LoginToTryCloud {
 
         // Entering username = "User12"
         WebElement inputUsername = driver.findElement(By.xpath("//input[@name='user']"));
-        inputUsername.sendKeys(ConfigurationReader.getProperty("username1"));
+        inputUsername.sendKeys(ConfigurationReader.getProperty("username3"));
 
         Thread.sleep(1000);
         // Enter password = "Userpass123"
