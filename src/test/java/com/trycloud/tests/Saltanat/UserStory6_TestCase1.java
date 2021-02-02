@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 public class UserStory6_TestCase1 extends LoginToTryCloud {
    @Test
    public void verify_users_can_access_to_Talks_module(){
+      System.out.println("test");
       // 1.Login as a user
 
  //deleted
