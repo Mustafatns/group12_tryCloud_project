@@ -25,7 +25,6 @@ public class TestCase_01 extends LoginToTryCloud {
         WebElement Notes = driver.findElement(By.xpath("//ul[@id='appmenu']/li[7]"));
 
         Actions action = new Actions(driver);
-
         SoftAssert softAssert = new SoftAssert();
 
         //Files
